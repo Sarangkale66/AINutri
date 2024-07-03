@@ -1,0 +1,32 @@
+{
+  "name": "ainutri",
+  "version": "1.0.0",
+  "description": "future of healthy Diet is here",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sarangkale66/AINutri.git"
+  },
+  "keywords": [
+    "GemeniApi",
+    "Web",
+    "Bluetooth",
+    "Api"
+  ],
+  "author": "sarang yash pratiksha vishakha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sarangkale66/AINutri/issues"
+  },
+  "homepage": "https://github.com/Sarangkale66/AINutri#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4"
+  }
+}
