@@ -4,11 +4,11 @@ const User=require("../modules/user")
 const app = express();
 
 app.get("/register", (req, res) => {
-    res.render('register.ejs');
+    res.render('register');
 })
 
-app.get("/signin", (req, res) => {
-    res.render("login.ejs");
+app.get("/login", (req, res) => {
+    res.render("login");
 })
 
 app.post("/signup", async (req, res) => {
@@ -24,7 +24,7 @@ app.post("/signup", async (req, res) => {
         weight,
         bloodGroup
     })
-    res.redirect("/login");
+    res.redirect("/");
 })
 
 module.exports = app;
