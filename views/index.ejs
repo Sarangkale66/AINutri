@@ -3,51 +3,49 @@
 
 <head>
   <%- include('./partials/head') %>
-  <title>Document</title>
-  <link rel="stylesheet" href="/styles/style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
 
 <body>
-  <%- include('./partials/script') %>
-  <form class="container ml-3">
-   
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Full Name</label>
-      <input type="text" class="form-control" id="exampleInputPassword1">
-    </div>
-    
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Mobile No</label>
-      <input type="number" class="form-control" id="exampleInputPassword1">
-    </div>
-    <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-    </div>
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1">
-    </div>
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">DOB</label>
-      <input type="text" class="form-control" id="exampleInputPassword1">
-    </div>
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Height</label>
-      <input type="number" class="form-control" id="exampleInputPassword1">
-    </div>
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Weight</label>
-      <input type="number" class="form-control" id="exampleInputPassword1">
-    </div>
-    <div class="mb-3 form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
-  <script src="/js/script.js/"></script>
+  <%- include('./partials/nav') %>
+    <form class="container ml-3" action="/user/signup" method="post">
+
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="fullName"  name="fullName">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Mobile No</label>
+        <input type="number" class="form-control" id="mobileNO" name="mobileNO">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email">
+        <div id="email" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" name="password">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">DOB</label>
+        <input type="text" class="form-control" id="DOB" name="DOB">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Height</label>
+        <input type="number" class="form-control" id="height" name="height">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Weight</label>
+        <input type="number" class="form-control" id="weight"  name="weight">
+      </div>
+       
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <script src="/js/script.js/"></script>
+    <%- include('./partials/script') %>
 </body>
 
 </html>
