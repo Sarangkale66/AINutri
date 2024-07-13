@@ -15,9 +15,9 @@ app.use('/user',userRouter);
 
 app.get("/",async(req,res)=>{
   const result=await User.find();
-  res.send(result);
+  res.render("index.ejs",{result});
 });
 
 app.listen(port,function(){
-  console.log("server is on:",port);
+  console.log(`server run on http://localhost:${port}`);
 })
