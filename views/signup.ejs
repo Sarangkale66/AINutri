@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+  <link rel="stylesheet" href="/styles/style.css">
+  <%- include('./partials/head') %>
+</head>
+
+<body>
+  <main class="h-screen w-full flex flex-col
+  items-center justify-center bg-slate-500">
+  <h1 class="text-8xl mb-3 text-white">SIGNUP</h1>
+  <form class=" flex gap-10 justify-between flex-wrap bg-slate-300 p-10 rounded-xl" method="post" action="/user/signup">
+    <div class="flex flex-col gap-1">
+      <label for="exampleInputPassword1" class="form-label">Full Name</label>
+      <input type="text" class="px-5 py-2 rounded-lg border-2 border-zinc-700" id="exampleInputPassword1" name="fullName">
+      <label for="exampleInputPassword1" class="form-label">Mobile No</label>
+      <input type="number" class="px-5 py-2 rounded-lg border-2 border-zinc-700" id="exampleInputPassword1" name="mobileNo">
+
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="px-5 py-2 rounded-lg border-2 border-zinc-700" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+      <div id="emailHelp" class="border-1 border-green-200">We'll never share your email with anyone else.</div>
+
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="px-5 py-2 rounded-lg border-2 border-zinc-700" id="exampleInputPassword1" name="password">
+    </div>
+    <div class="flex flex-col gap-2">
+      <label for="exampleInputPassword1" class="form-label">DOB</label>
+      <input type="date" class="px-5 py-2 rounded-lg border-2 border-zinc-700" id="exampleInputPassword1" name="DOB">
+
+      <label for="exampleInputPassword1" class="form-label">Height</label>
+      <input type="number" class="px-5 py-2 rounded-lg border-2 border-zinc-700" id="exampleInputPassword1" name="height">
+
+      <label for="exampleInputPassword1" class="form-label">Weight</label>
+      <input type="number" class="px-5 py-2 rounded-lg border-2 border-zinc-700" id="exampleInputPassword1" name="weight">
+
+      <label for="exampleInputPassword1" class="form-label">Blood Group</label>
+      <input type="text" class="px-5 py-2 rounded-lg border-2 border-zinc-700" id="exampleInputPassword1" name="bloodGroup">
+      </div>
+    <div class="h-fit w-full text-center">
+      <button type="submit" class="px-5 py-2 bg-blue-400 w-fit rounded-lg mx-auto">Submit</button>
+    </div>
+  </form>
+</main>
+  <script src="/js/script.js/"></script>
+</body>
+
+</html>
