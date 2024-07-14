@@ -11,9 +11,13 @@ app.get("/login", (req, res) => {
 app.post("/login",async(req,res)=>{
     let user=await User.findOne({email:req.body.email});
     bcrypt.compare(req.body.password, user.password).then(function(result) {
-        if(result)
+        if(result){
+            let token=jwt.sign({email:req.body.email,fullName:user.fullName},"shhhh");
+            res.cookie("token",token)
             res.redirect("/profile");
-        res.redirect("/login");
+        }else{
+            res.redirect("/user/login");
+        }
     });
 });
 
