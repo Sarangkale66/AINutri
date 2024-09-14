@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./src/login.css">
+</head>
+<link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css"/>
+<style>
+.name{
+ border-bottom: 1px black solid;
+}
+.container{
+  box-shadow: 1px 20px 20px 17px #2a282842;
+  }
+  .shadow{
+    box-shadow: 0px 0px 12px 20px #0c05058c;
+  }
+  #cursor{
+    pointer-events: none;
+  }
+</style>
+<body class="overflow-hidden">
+  <div id="cursor" class="h-5 w-5 rounded-full bg-slate-200 z-10 absolute top-0 scale-0 left-0"></div>
+  <div id="fullScreen" class="h-screen w-screen bg-transparent flex justify-center items-center relative ">
+   <img src="./media/depositphotos_313541944-stock-photo-fitness-concept-healthy-nutrition-equipment.jpg" class=" h-screen w-screen  object-cover absolute filter blur-[3px]" id="bgImg">
+<div class="h-[70%] w-[70%] backdrop-blur-3xl bg-[#595c5d3d] rounded-[30px] relative flex justify-center items-center container">
+<div class=" h-[100%] w-[50%] font-bold ">
+        <h1 id="head1" class="text-center mb-2 mt-5 text-white text-3xl font-[cursive]">JOIN US TODAY</h1>
+        <h1 id="head2" class="text-center m-3 text-white">Sign up now to become a member</h1>
+        <input type="text" placeholder="Enter Name" class=" m-1 name h-14 w-6/12 transform translate-x-1/2 bg-transparent placeholder-[#d2d1d1] p-2 border-none  text-white outline-none">
+        <input type="email" placeholder="Enter your email" class="m-1 name h-14 w-6/12 transform translate-x-1/2 bg-transparent placeholder-[#d2d1d1] p-2 text-white outline-none">
+        <input type="password" placeholder="Enter password" class="m-1 name h-14 w-6/12 transform translate-x-1/2 bg-transparent placeholder-[#d2d1d1] p-2  text-white outline-none">
+        <input type="password" placeholder="Re enter password" class="m-1 name h-14 w-6/12 transform translate-x-1/2 bg-transparent placeholder-[#d2d1d1] p-2 text-white outline-none">
+        <button id="btn1" type="submit" class="m-1 h-14 w-6/12 transform translate-x-1/2 bg-[#3bdbd699] backdrop-blur-3xl rounded-[10px] hover:bg-slate-400 cursor-pointer ">
+          <p class="z-10">SignUp</p>
+        </button>
+        <p class=" m-2 text-center">Already a member? <button id="loginHere" class="text-rose-600 cursor-pointer">Login here</button></p>
+      </div>
+<div class=" signup h-[100%] w-[50%] font-bold translate-y-[15%] " >
+        <h1 class="text-center m-5 text-white text-2xl font-[cursive]">WELCOME BACK !</h1>
+        <h1 class="text-center m-1 text-white">Log in to access your account</h1>
+        <input type="text" placeholder="Email" class="m-1 name h-14 w-6/12 transform translate-x-1/2 bg-transparent placeholder-[#d2d1d1] p-2  text-white outline-none">
+        <input type="text" placeholder="Password" class="m-1 name h-14 w-6/12 transform translate-x-1/2 bg-transparent placeholder-[#d2d1d1] p-2  text-white outline-none">
+        <input type="submit" value="Login" class="m-2 h-14 w-6/12 transform translate-x-1/2 bg-[#3bdbd699] backdrop-blur-3xl rounded-[10px] cursor-pointer">
+        <p class=" m-2 text-center">Not a member? <button id="signUpHere" class="text-rose-600 cursor-pointer">SignUp here</button></p>
+      </div>
+<div id="slideBar" class="absolute h-[100%] w-[50%] rounded-[30px] left-[50%]">
+   <img src="./media/kid-with-pineapple-cinematic-style_23-2151599878.avif" class="h-[100%] w-[100%] object-cover rounded-[30px]" alt="">
+   <img src="./media/1868-What-Is-Yoga-And-What-Are-Its-Benefits-ss.jpg" class="h-[100%] w-[100%] object-cover rounded-[30px]" alt="">
+  </div>
+    </div>
+    <div class="shadow absolute  bottom-[3%] h-[5%] w-[60%] bg-[#0c050591] border-none rounded-[45%]">
+    </div>
+  </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+<script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+<script src="./script.js"></script>
+
+
+</body>
+</html>

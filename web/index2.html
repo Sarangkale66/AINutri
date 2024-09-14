@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html,body{
+    height: 100%;
+    width: 100%;
+  }
+  .page{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+  }
+  .page1{
+    background-color: red;
+  }
+  .page2{
+    overflow-x: hidden;
+    background-color: green;
+  }
+  .page3{
+    background-color: blue;
+  }
+  .infinite{
+    color: aliceblue;
+    text-transform: uppercase;
+    font-size: 50px;
+    width: 300vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(20%);
+  }
+</style>
+<body>
+  <div class="page page1"></div>
+  <div class="page page2">
+    <div>
+    <div class="infinite">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem ratione voluptatibus 
+    </div>
+  </div>
+</div>
+  <div class="page page3"></div>
+
+  <script src="./locomotive.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    // gsap.to(".infinite",{
+    //   transform: "translateX(-77%)",
+    //   duration:8,
+    //   repeat:-1,
+    //   ease:"linear"
+    // });
+    window.addEventListener("wheel",(dets)=>{
+      console.log(dets);
+    })
+  </script>
+</body>
+</html>
