@@ -6,7 +6,6 @@ const User=require('./modules/user');
 const cookieParser = require('cookie-parser');
 const jwt=require('jsonwebtoken');
 const bcrypt=require('bcrypt');
-const checkLoggedIn=require("./controller/user")
 
 let port=process.env.PORT||8000;
 
@@ -32,6 +31,16 @@ app.get("/profile",checkLoggedIn,(req,res)=>{
   console.log(req.user);
   res.render("profile.ejs");
 })
+
+function checkLoggedIn(req,res,next){
+  if(req.cookies.token==="")
+    res.status(200).redirect("/user/login");
+  else{
+    let data=jwt.verify(req.cookies.token,"shhhh");
+    req.user=data;
+    next();
+  }
+}
 
 app.listen(port,function(){
   console.log(`server run on http://localhost:${port}`);
