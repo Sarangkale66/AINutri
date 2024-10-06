@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI-NUTRI</title>
+  <link rel="stylesheet" href="style/index.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<style>
+</style>
+<body>
+  <div class="main3">
+    <nav id="navbar">
+      <div id="navLeft">
+        <h1>Khaatabook</h1>
+      </div>
+      <div class="message">
+        <h5>Message Saved</h5>
+      </div>
+      <div id="navRight">
+        <button>
+          <a href="/App/profile" id="profile">Profile</a>
+        </button>
+        <button id="home">
+          <a href="/App/home">Connect BT Heart-Rate</a>
+        </button>
+        <button id="createBtn">
+          <a>Create New Hisaab</a>
+        </button>
+      </div>
+    </nav>
+    <main>
+      <div id="slidebar">
+        <h3>ALL HISAAB</h3>
+        <section>
+        </section> 
+      </div>  
+      <div id="create">
+        <form action="/edit" class="form" method="post">
+          <input type="text" name="filename" readonly id="filename">
+          <textarea id="txtArea" name="data" rows="25" wrap="soft" autofocus cols="100" spellcheck="false" placeholder="Write Your Notes Over Here........"></textarea>
+        </form>
+        <button id="submit">Save</button>
+        <div id="box">
+          <div id="Suggestion">  
+            <button class="Sbtns">Give todays nutritious diet</button>
+            <button class="Sbtns">any salad recipe </button>
+            <button class="Sbtns">give me todays diet and exercise plans</button>
+            <button class="Sbtns">give me my water plan</button>
+            <button class="Sbtns">Healthy receipe for breakfast</button>
+            <button class="Sbtns">Give me sugar free diet</button>
+            <button class="Sbtns">Diet which doesn't contain extra salt</button>
+            <button class="Sbtns">Meal Prep Ideas</button>
+            <button class="Sbtns">Healthy Snack Options</button>
+            <button class="Sbtns">Vegan Diet Plan</button>
+            <button class="Sbtns">High-Protein Recipes</button>
+            <button class="Sbtns">Low-Carb Meal Plan</button>
+            <button class="Sbtns">Gluten-Free Recipe</button>
+            <button class="Sbtns">Seasonal Produce Guide</button>
+            <button class="Sbtns">Tips for Mindful Eating</button>
+            <button class="Sbtns">Cooking Techniques for Healthy Meals</button>
+            <button class="Sbtns">Healthy Dessert Alternatives</button>
+            <center><h3 style="margin: 3px; margin-left: 5px;">Or Try Custom Query....</h3></center>
+          </div>
+          <input type="text" id="inpt" placeholder="Custom Query Over Here..." value="Custom Query Over Here..."></input>
+          <button id="btn-ai"><i class="ri-magic-line"></i></button>
+        </div>
+        <button id="copybtn"><i class="ri-clipboard-line"></i></button>
+        <button id="AI"><i class="ri-robot-2-line"></i></button>
+        <button id="cancel">
+          <i class="ri-close-large-fill"></i>
+        </button>
+      </div>
+      <div id="loader">
+        <div class="square"></div>
+      </div>
+    </main> 
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/index.js"></script>
+<script>
+</script>
+</html>

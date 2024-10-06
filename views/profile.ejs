@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI-NUTRI</title>
+
+  <link rel="stylesheet" href="/style/output.css">
+</head>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Fjalla+One&display=swap');
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body,html{
+    height: 100vh;
+    width: 100vw;
+  }
+  h1{
+    -webkit-text-stroke: 3px white;
+    -webkit-text-fill-color: rgba(174, 180, 185, 0.362);
+  }
+  h3{
+    -webkit-text-stroke:white 0.5px;
+  }
+  #value p{
+    -webkit-text-stroke:rgb(255, 255, 255) 3px;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+</style>
+<body class=" relative h-screen w-screen overflow-hidden">
+<div class="relative h-screen w-screen overflow-hidden ">
+  <!-- <video src="https://res.cloudinary.com/dt7jhmwum/video/upload/v1720544906/noangswhihmh1m8hziqb.mp4" autoplay muted loop></video> -->
+   <video src="/media/video (1).mp4" autoplay muted loop></video>
+      <!-- <nav class="absolute top-0 left-0 flex bg-[#9cb9c36a] backdrop-blur-[100px] h-[5%] w-[100%] border-b-black border-solid"> -->
+        <div class="display">
+          
+        </div>
+        <div class="options">
+        <li class="list-none"></li>
+        <li class="list-none"></li>
+        <li class="list-none"></li>
+        <li class="list-none"></li>
+      </div>
+      <div class="profile">
+      </div>
+      </nav>
+      <div class="absolute top-[5%] left-[3%] backdrop-blur-[6px] py-5">
+        <h1 class="font-[900] text-9xl"> Hi! <%=user.name%></h1>
+        <div class="flex justify-start gap-10">
+        <h3 class="font-[900] text-5xl text-[#213b838f]">&nbsp;is there any update</h3>
+        <button class="absolute top-[100%] bg-[#03037c79] w-fit px-5 rounded-[20px] text-[white] font-bold"><a href="/App">Get Started</a></button>
+      </div>
+      </div>
+      <div class=" absolute bottom-3 left-0 h-[30%] w-[97%] m-5 backdrop-blur-[10px] grid grid-cols-4 justify-items-center items-center">
+        <div class="h-[90%] w-[90%] bg-[#ae445943] backdrop-blur-[5px]">
+          <h3 class="text-[#ffffff] ml-7 mt-4 text-[20px]">Heart Rate</h3>
+            <data class=" h-[70%] w-[100%] flex items-center justify-around p-[10px]">
+              <img class="h-[90%] w-[60%] object-contain ml-[-10px]" src="/media/fitness-8502.svg" alt="">
+              <div id="value" class="flex justify-center items-center h-[80%] w-[50%]">
+                <p class="bpm font-[800] text-[#00a99b] text-6xl"><%=user.bpm%></p>
+              </div>
+          </data>
+        </div>
+          <div class="h-[90%] w-[90%] bg-[#27319a3b] backdrop-blur-[5px]">
+            <h3 class="text-[#ffffff] ml-7 mt-4 text-[20px]">O<sub>2</sub> Levels</h3>
+            <data class=" h-[70%] w-[100%] flex items-center justify-around p-[10px]">
+              <img class="h-[90%] w-[60%] object-contain ml-[-10px]" src="/media/oxygen-svgrepo-com.svg" alt="">
+              <div id="value" class="flex justify-center items-center h-[80%] w-[50%]">
+                <p class=" font-[800] text-[#00a99b] text-6xl">100</p>
+              </div>
+          </data>
+          </div>
+          <div class="h-[90%] w-[90%] bg-[#aeaa4443] backdrop-blur-[5px]">
+            <h3 class="text-[#ffffff] ml-7 mt-4 text-[20px]">Foot Steps</h3>
+              <data class=" h-[70%] w-[100%] flex items-center justify-around p-[10px]">
+                <img class="h-[90%] w-[60%] object-contain ml-[-10px]" src="/media/footsteps-outline-svgrepo-com.svg" alt="">
+                <div id="value" class="flex justify-center items-center h-[80%] w-[50%]">
+                  <p class=" font-[800] text-[#00a99b] text-6xl">100</p>
+                </div>
+            </data>
+          </div>
+          <div class="h-[90%] w-[90%] bg-[#f39f5a4b] backdrop-blur-[5px] ">
+            <h3 class="text-[#ffffff] ml-7 mt-4 text-[20px]">Sleep Monitoring</h3>
+            <data class=" h-[70%] w-[100%] flex items-center justify-around p-[10px]">
+              <img class="h-[90%] w-[60%] object-contain ml-[-10px]" src="/media/sleeping-square-svgrepo-com.svg" alt="">
+              <div id="value" class="flex justify-center items-center h-[80%] w-[50%]">
+                <p class=" font-[800] text-[#00a99b] text-6xl">100</p>
+              </div>
+          </data>
+          </div>
+      </div>
+  </div>
+</body>
+<script src="/js/profile.js"></script>
+</html>
