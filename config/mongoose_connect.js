@@ -1,7 +1,7 @@
 const mongoose=require('mongoose');
 const debugLog=require("debug")("developement:Mongoose_Connection");
 
-mongoose.connect("mongodb://localhost:27017/AINutri");
+mongoose.connect(process.env.MONGO_URL);
 
 const db=mongoose.connection;
 
