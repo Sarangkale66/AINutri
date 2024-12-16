@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./src/locomotive.css">
+  <link rel="stylesheet" href="./src/slashPage.css">
+</head>
+<style>
+#name{
+    -webkit-text-stroke: 3px #ffffff;
+    -webkit-text-fill-color: rgba(174, 180, 185, 0.362);
+    transform: translateY(10%);
+  }
+
+  #Block1,#Block2,#Block3,#Block4,#Block5{
+    transform: translate(0%);
+  }
+
+  #con1,#con2,#con3,#con4,#con5{
+    transform: translate(10%);
+  }
+
+  #text{font-size:0px;
+    opacity: 0;
+  }
+
+  #round1,#round2,#round3,#round4,#round5{
+    transform: translate(-50%);
+  }
+  #nameContainer{
+    filter: drop-shadow(0px -20px 59px rgba(6, 69, 73, 0.808))
+  }
+
+  /* #effect{
+    box-shadow: 0px 20px 20px 20px #088ca3;
+  } */
+</style>
+<body>
+  <div data-scroll data-scroll-container class="container bg-[#ffffff]">
+    <div id="first" class=" relative h-screen w-screen bg-[#028090] flex items-center justify-center overflow-hidden">
+      <nav class="absolute top-0 left-0 h-screen w-screen z-10 bg-[#00a896] flex justify-center" id="nav">
+
+          <ol class=" w-[70vw] h-[100%] flex justify-between items-center text-white">
+            <li class="ele text-xl font-bold"><a href="./index.html">Homepage</a></li>
+            <li class="ele text-xl font-bold">About</li>
+              <div id="imgbg" class="absolute left-[45%] top-0 h-[190%] w-[100px] bg-white rounded-full flex items-center justify-center  ">
+                <img class=" h-[20vh] w-[20vw] object-contain"
+                src="./media/AI__2_-removebg-preview.png" alt="">
+            </div>
+            <li class="ele text-xl font-bold"><a href="./login.html">Login/SignUp</a></li>
+            <li class="ele text-xl font-bold"><a href="./login.html">Contact us</a></li>
+          </ol>
+      </nav>
+      <div id="nameContainer" class="h-[180vh] w-[90vw] rounded-full flex justify-center bg-[#57CC99] absolute top-[30%] shadow-xl shadow-green-600">
+        <div class="h-[70vh] w-[15vw] bg-transparent absolute top-0 left-0 -rotate-[50deg] flex items-start py-20 justify-between">
+          <img src="./media/Animation - 1723356289264.gif" class="h-[250px] w-[250px]" alt="">
+        </div>
+        <div class="h-[70vh] w-[15vw] bg-transparent absolute top-[-15%] left-[15%] -rotate-[30deg] flex items-start py-[42px] justify-between">
+          <img src="./media/Animation - 1723357011415.gif" class="h-[250px] w-[250px]" alt="">
+        </div>
+        <div class="h-[70vh] w-[15vw] bg-transparent absolute top-[-15%] right-[15%] rotate-[30deg] flex items-start py-[50px] justify-between">
+          <img src="./media/Animation - 1723356777963.gif" class="h-[250px] w-[250px]" alt="">
+        </div>
+        <div class="h-[70vh] w-[15vw] bg-transparent absolute top-0 right-0 -rotate-[-50deg] flex items-start py-[47px] justify-between">
+          <img src="./media/Animation - 1723360249719.gif" class="h-[250px] w-[250px]" alt="">
+        </div>
+      <h1 id="name" class=" text-[200px] font-bold text-[#ffffff]"> AI-Nutri </h1>
+    </div>
+    </div>
+
+    <div id="page" data-scroll  class="h-screen w-screen  flex justify-center items-center bg-gradient-to-b from-[#006769] via-[#468585] to-[#006769] relative overflow-hidden">
+      <div id="effect" class="h-[5px] w-[100vw] absolute z-10 bg-[#088ca3] top-0 shadow-xl shadow-green-600"></div>
+      <div class="absolute right-[-5%] top-[-5%] h-[40vh] w-[40vh] bg-[#088ca3] rounded-full "></div>
+      <div class="h-[80%] w-[80%] flex justify-center items-center">
+      <div class="w-[50%] grid grid-cols-2 grid-rows-2 gap-2">
+        <img id="image1" class="h-[120px] w-[150px]"  src="./media/istockphoto-1446490610-612x612.jpg" alt="">
+        <img id="image2" class="h-[120px] w-[150px]" src="./media/essential-guide-daily-dietary-fiber.jpg" alt="">
+        <img id="image3" class="h-[120px] w-[150px]"  src="./media/daily-fitness-guide-for-a-healthy-lifestyle-359984.webp" alt="">
+        <img id="image4" class="h-[120px] w-[150px]" src="./media/The_Real_Cost_of_Living_a_Healthy_Lifestyle_e2c4212e3b.jpg" alt="">
+
+      </div>
+      <div class="w-[50%] flex justify-center items-center">
+        <div id="info" class="text-justify text-xl font-semibold text-[white]"><b><i>Ai-Nutri</i></b> an innovative solution designed to revolutionize the way you approach nutrition and healthy living. Leveraging advanced artificial intelligence and machine learning algorithms, our system provides personalized dietary recommendations tailored to your unique health needs, preferences, and lifestyle. Whether you're aiming to lose weight, manage a medical condition, or simply eat healthier, our AI dietician takes into account your dietary restrictions, nutritional requirements, and fitness goals to craft meal plans that are both nutritious and enjoyable.
+        </div>
+      </div>
+    </div>
+      </div>
+
+    <div id="page2" data-scroll  class="h-screen w-screen bg-[#468585]">
+      
+      <div id="Block1" data-scroll data-scroll-direction="horizontal" class="h-screen absolute top-3 left-0">
+
+          <div id="round1" class="bg-red-600 h-[40vh] w-[40vh] rounded-full absolute top-0 left-0"><p class="text-9xl text-white font-bold absolute left-[50%] top-[20%]">1</p></div>
+
+          <div id="con1" class="h-[50vh] font-bold text-3xl m-20 text-white"><h1 class="text-7xl">Real Time Data Analysis</h1><p class="text-justify my-32 w-[70vw] leading-[70px]">revolutionize personalized nutrition planning by leveraging real-time data from smartwatches. By tapping into individual user data, the service provides tailored dietary recommendations, enhances user engagement, and improves health outcomes.</p>
+        </div>
+      </div>
+
+    <div id="Block2" data-scroll data-scroll-direction="horizontal" class=" h-screen absolute top-3 left-[100%]"> 
+
+        <div id="round2" class="bg-red-600 h-[40vh] w-[40vh] rounded-full absolute top-0 left-0"><p class="text-9xl text-white font-bold absolute left-[50%] top-[20%]">2</p></div>
+
+        <div id="con2" class="h-[50vh] font-bold text-3xl m-20 text-white"><h1 class="text-7xl">User Profile Data</h1><p class="text-justify my-32 w-[70vw] leading-[70px]">This includes basic information such as age, gender, height, weight, allergies, diabetes, or hypertension,  which are crucial for calculating metrics like BMI and caloric requirements. Users can also input their personal goals, such as weight loss or muscle gain, along with dietary preferences and meal timings.</p>
+        </div>
+      </div>
+      <div id="Block3" class=" h-screen absolute top-3 left-[200%]">
+        
+        <div id="round3"  class="bg-red-600 h-[40vh] w-[40vh] rounded-full absolute top-0 left-0"><p class="text-9xl text-white font-bold absolute left-[50%] top-[20%]">3</p></div>
+
+        <div id="con3" class="h-[50vh] font-bold text-3xl m-20 text-white"><h1 class="text-7xl">Personalized Diet Plans </h1><p class="text-justify my-32 w-[70vw] leading-[70px]">It calculates the ideal caloric intake and nutrient distribution, adjusting meal plans to align with the user's daily activity levels and overall health status. The system also considers food allergies and dietary preferences, ensuring that meal recommendations are safe, enjoyable, and effective.</p>
+        </div>
+      </div>
+
+      <div id="Block4" class=" h-screen absolute top-3 left-[302%]">
+        
+        <div id="round4"  class="bg-red-600 h-[40vh] w-[40vh] rounded-full absolute top-0 left-0"><p class="text-9xl text-white font-bold absolute left-[50%] top-[20%]">4</p></div>
+
+        <div id="con4" class="h-[50vh] font-bold text-3xl m-20 text-white"><h1 class="text-7xl">Exercise Suggestions</h1><p class="text-justify my-32 w-[70vw] leading-[70px]">By analyzing real-time data from wearable devices, the AI can suggest workouts that match the user’s current physical condition. The system also tracks progress over time, adjusting exercise routines to ensure continuous improvement and prevent overexertion.</p>
+        </div>
+      </div>
+
+      <div id="Block5" class=" h-screen absolute top-3 left-[405%]">
+        
+        <div id="round5"  class="bg-red-600 h-[40vh] w-[40vh] rounded-full absolute top-0 left-0"><p class="text-9xl text-white font-bold absolute left-[50%] top-[20%]">5</p></div>
+
+        <div id="con5" class="h-[50vh] font-bold text-3xl text-white m-20"><h1 class="text-7xl">Continuous Support</h1><p class="text-justify my-32 w-[70vw] leading-[70px]">Unlike human dieticians, AI-based systems are available around the clock, providing support and guidance whenever needed. It analyzes individual health data, dietary preferences, and goals to create tailored meal plans, enhancing the effectiveness of dietary interventions.
+        </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="pagetwo" class="relative h-screen w-screen">
+
+      <div class=" absolute bg-cover bg-center h-[100%] w-[100%] -z-10 " style="background-image: url('/media/page3/photo-1708162664628-6913e8797929.avif');"></div>
+      
+      <div class=" absolute right-[35%] bottom-[10%] h-[200px] w-[100px] bg-cover bg-center" style="background-image: url('/media/page3/photo-1723227300708-1ff74add4195.avif');"></div>
+      
+      <div class=" absolute right-[25%] bottom-[10%] h-[200px] w-[100px] bg-cover bg-center" style="background-image: url('/media/page3/photo-1723458226643-6ac0e1e6f1a6.avif');"></div>
+      
+      <div class=" absolute right-[15%] bottom-[10%] h-[200px] w-[100px] bg-cover bg-center" style="background-image: url('/media/page3/photo-1723653508269-7b2abc5d8e74.avif');"></div>
+      
+      <div class=" absolute right-[5%] bottom-[10%] h-[200px] w-[100px] bg-cover bg-center" style="background-image: url('/media/page3/photo-1723766700475-3f8f1d3c0c1a.avif');"></div>
+
+      <button class="h-[8vh] w-[20vw] bg-cyan-400 absolute bottom-2 left-[30%]" id="prevBtn">Previous</button>
+    <button class="h-[8vh] w-[20vw] bg-cyan-400 absolute bottom-2 left-[60%]" id="nextBtn">Next</button>
+
+    </div>
+
+    <div id="page3" class="h-screen w-screen flex items-center justify-center flex-wrap relative">
+      <!-- <img id="img1" class="text-7xl h-fit w-fit absolute top-1 right-[10%]"
+          src="/media/juggling-food-1613249875-1614939292-hero-removebg-preview.png" alt="">
+          <img id="img2" class="text-7xl h-fit w-fit absolute bottom-1 left-[10%]"
+          src="/media/pngtree-sitting-and-meditating-yoga-woman-illustrations-with-green-leaves-png-image_5387170-removebg-preview.png" alt=""> -->
+      <h1 id="text" class="font-extrabold text-center">TEXT TO<br>ZOOM<br>on scroll</h1> 
+    </div>
+
+    <div class="h-screen w-screen bg-[#9eeee5]"></div>
+  </div>
+
+  <script src="./locomotive.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="slashPage.js"></script>
+</body>
+</html>
